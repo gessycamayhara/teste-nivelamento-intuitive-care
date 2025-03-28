@@ -30,29 +30,29 @@ Ele realiza automaticamente o download dos arquivos **"Anexo I"** e **"Anexo II"
 
 Via terminal:
 
-git clone https://github.com/seu-usuario/teste-nivelamento.git
+`git clone https://github.com/seu-usuario/teste-nivelamento.git`
 
 ### 2. Navegue até a pasta do projeto:
 
-cd teste-nivelamento/web-scraping
+`cd teste-nivelamento/web-scraping`
 
 ### 3. Crie o ambiente virtual:
 
-python -m venv venv
+`python -m venv venv`
 
 ### 4. Ative o ambiente virtual:
 
-venv\Scripts\activate
+`venv\Scripts\activate`
 
 ### 5. Instale as dependências:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 Se você não tiver um requirements.txt, instale diretamente:
 
-pip install requests beautifulsoup4
+`pip install requests beautifulsoup4`
 
 ### 6. Execute o script:
 
-python main.py
+`python main.py`
 
