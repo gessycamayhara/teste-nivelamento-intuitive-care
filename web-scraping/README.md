@@ -6,7 +6,7 @@ Ele realiza automaticamente o download dos arquivos **"Anexo I"** e **"Anexo II"
 
 ---
 
-## 🧠 O que o script faz:
+## O que o script faz:
 
 ✔️ Acessa a página da ANS  
 ✔️ Encontra os links dos PDFs “Anexo I” e “Anexo II”  
