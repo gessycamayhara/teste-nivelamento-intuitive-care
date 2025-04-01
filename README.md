@@ -30,7 +30,6 @@ A **Intuitive Care** desenvolve tecnologia para automatizar processos financeiro
 ## 👩‍💻 Desenvolvido por
 
 **Gessyca Mayhara**  
-Candidata à vaga de estágio em Desenvolvimento de Software  
-[https://www.linkedin.com/in/mayharamoraes/] |  
+Candidata à vaga de estágio em Desenvolvimento de Software    
 
 
