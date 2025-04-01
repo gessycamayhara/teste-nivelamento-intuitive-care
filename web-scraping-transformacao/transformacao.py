@@ -7,14 +7,14 @@ import os
 zip_path = "anexos.zip"
 pdf_filename = "Anexo_1.pdf"
 
-# Extrair o PDF do ZIP, se necessário
+# Extrair o PDF do ZIP
 if not os.path.exists(pdf_filename):
     print(f"Extraindo {pdf_filename} de {zip_path}...")
     with ZipFile(zip_path, "r") as zip_ref:
         zip_ref.extract(pdf_filename)
     print("Extração concluída.\n")
 
-# Lista para armazenar as tabelas extraídas
+
 tabelas = []
 
 # Abrir o PDF e extrair tabelas
@@ -34,7 +34,7 @@ with pdfplumber.open(pdf_filename) as pdf:
 if not tabelas:
     print("\n Nenhuma tabela foi extraída do PDF.")
 else:
-    # Juntar todas as tabelas
+    
     df_total = pd.concat(tabelas, ignore_index=True)
     print(f"\n Total de tabelas extraídas: {len(tabelas)}")
     print("\n Primeiras linhas da tabela combinada:")
@@ -62,6 +62,5 @@ with ZipFile(zip_nome, "w") as zipf:
     zipf.write(csv_nome)
 print(f"Arquivo compactado gerado: {zip_nome}")
 
-# (Opcional) Remover o CSV solto para deixar só o zip
 os.remove(csv_nome)
 print(f"CSV removido da pasta. Apenas {zip_nome} permanece.")
